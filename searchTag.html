@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Widget Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    #searchWidgetTrigger {
+      padding: 0.5rem;
+      font-size: 1rem;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Search Widget Integration</h1>
+  <p>Click or type into the input below to activate the Gen App Builder Search Widget:</p>
+
+  <!-- Trigger element -->
+  <input placeholder="Search here" id="searchWidgetTrigger" />
+
+  <!-- Widget JavaScript bundle -->
+  <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
+  <!-- Search widget element -->
+  <gen-search-widget
+    configId="ea9c428f-31d0-4b86-bb3a-a622988872fb"
+    triggerId="searchWidgetTrigger">
+  </gen-search-widget>
+
+</body>
+</html>
